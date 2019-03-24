@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+USER_KEY=$1
+
+USER_NAME='H2'
+USER_EMAIL='hemoptysisheart@gmail.com'
+
+case $USER_KEY in
+    1)
+        USER_NAME='Dummy'
+        USER_EMAIL='dummy@example.com'
+        ;;
+    2)
+        USER_NAME='Dummy2'
+        USER_EMAIL='dummy2@example.com'
+        ;;
+    3)
+        USER_NAME='Dummy3'
+        USER_EMAIL='dummy3@example.com'
+esac
+
+echo "user : $USER_NAME < $USER_EMAIL >"
+
+git config --local user.name "$USER_NAME"
+git config --local user.email "$USER_EMAIL"
