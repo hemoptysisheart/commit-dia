@@ -9,3 +9,4 @@ Better `git flow` with `git rebase`.
 
 1. add concurrent features.
 1. add large feature with 2 or more members.
+1. add hotfix.
